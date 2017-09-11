@@ -1,0 +1,238 @@
+
+.section{
+  overflow: hidden;
+}
+
+.section__content {
+  position: absolute;
+  z-index: 20;
+  top: 43%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+          transform: translate3d(0,0,0);
+
+  h1 {
+    @include font-style(40, 'Quattrocento');
+    color: black;
+    font-weight: 500;
+  }
+}
+
+/*
+* VIDEO FULLSCREEN
+*/
+#myVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  z-index:3;
+}
+
+.section__video .layer{
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 43%;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.section__video{
+  overflow: hidden; /*solves problem with overflowing video in Mac with Chrome */
+}
+
+.section__overlay {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.05);
+}
+
+
+/*
+* SLIDES IMAGE CENTER
+*/
+.slides__imgContain {
+  height: 60vh;
+}
+
+.slides__imgContain .fp-prev{
+  left: -30px;
+}
+
+.slides__imgContain .fp-next{
+  right: -30px;
+}
+
+.section__imgContain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: block !important;
+}
+
+
+/*
+* TEXT CENTER
+*/
+.section__centeredText {
+  background-color: white;
+  text-align: left;
+  @include breakpoint(sm) {
+    text-align: center;
+  }
+  div > p {
+    @include font-style(16, 'Quattrocento');
+    margin: 0;
+    margin-top: 40px;
+    @include breakpoint(sm) {
+      @include font-style(18, 'Quattrocento');
+      margin: 0;
+    }
+    @include breakpoint(lg) {
+      @include font-style(22, 'Quattrocento');
+    }
+  }
+}
+
+.section__centeredText--invert {
+  @extend .section__centeredText;
+  background-color: black;
+  div > p,
+  div > p > * {
+    color: white;
+  }
+}
+
+
+/*
+* IMAGE FULLSCREEN
+*/
+.section__imgCover {
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/*
+* IMAGE + HEADLINE
+*/
+.section__ImgText {
+  margin-top: 30px;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    color: #6C614D;
+    @include font-style(20, 'Quattrocento Sans');
+    @include breakpoint(sm) {
+      @include font-style(30, 'Quattrocento Sans');
+    }
+    @include breakpoint(md) {
+      @include font-style(35, 'Quattrocento Sans');
+    }
+    @include breakpoint(lg) {
+      @include font-style(40, 'Quattrocento Sans');
+    }
+  }
+}
+
+
+/*
+* PRODUCTS
+*/
+.section__prod {
+  img {
+    padding: 15px;
+  }
+  a {
+    text-align: center;
+    @include font-style(12, 'Quattrocento Sans');
+  }
+
+  .section__oneProd:nth-child(2),
+  .section__oneProd:nth-child(3){
+    display: none;
+    @include breakpoint(sm) {
+      display: inline-block;
+    }
+  }
+}
+
+
+
+/* -- RESPONSIVE - mobile in landscape orientation -- */
+@media only screen and (max-device-width : 767px) and (orientation : landscape) {
+
+  /*
+  * IMAGE CENTER
+  */
+  .section__imgCenter > div > div{
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 27.5%;
+  }
+
+  /*
+  * SLIDES IMAGE CENTER
+  */
+  .slides__imgContain {
+    height: 40vh;
+    margin-top: 2%;
+  }
+
+  /*
+  * IMAGE + HEADLINE
+  */
+  .section__ImgText > div:nth-child(1) > div{
+    width: 45%;
+    margin-left: 0;
+    h1 {
+      text-align: left;
+    }
+  }
+  .section__ImgText > div:nth-child(1) > .section__ImgText--img {
+    margin-left: 5%;
+  }
+
+  /*
+  * PRODUCTS
+  */
+  .section__prod {
+    .section__oneProd{
+      width: 32.5%;
+      display: inline-block;
+      margin-top: 5%;
+    }
+
+    .section__oneProd:nth-child(2),
+    .section__oneProd:nth-child(3){
+      display: inline-block;
+    }
+  }
+}
+
+/*
+@include breakpoint(md) {
+  .contact {
+    height: 20%;
+  }
+}
+
+@include font-style(16, 'Replica-Mono');
+*/

@@ -1,0 +1,65 @@
+/*
+* Hamburgers from Jonathan Suh
+*/
+.hamburger {
+  padding: 0;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 22.5px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 3px;
+  border-radius: 0;
+}
+
+
+/*
+* Slick - Slider
+*/
+.slick-slide {
+  outline: 0;
+}
+
+/*
+* Fullpage.js
+*/
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  width: 30px;
+  height: 30px;
+  -webkit-transform: none;
+          transform: none;
+  border: none;
+  margin: 0;
+  margin-top: -20px;
+  z-index: 40;
+  @include breakpoint(sm) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  background: url('../img/left-slide2.svg') no-repeat;
+  opacity: .5;
+}
+.fp-controlArrow.fp-next {
+  right: 15px;
+  background: url('../img/right-slide2.svg') no-repeat;
+  opacity: .5;
+}
+
+.fp-controlArrow {
+
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+
+.fp-controlArrow:hover {
+  opacity: 1;
+}
