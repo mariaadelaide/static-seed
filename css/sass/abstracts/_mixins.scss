@@ -1,0 +1,130 @@
+/* Load fonts */
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); /* IE9 compat*/
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+			url('#{$src}.woff') format('woff'), // standards
+			url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+			url('#{$src}.otf') format('truetype'),
+			url('#{$src}.svg##{$family}') format('svg'); /* legacy iOS*/
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+/* font size */
+@mixin font-size($f-size) {
+	font-size: #{$f-size}px;
+  font-size: #{$f-size/10}rem;
+}
+
+
+/* font style */
+@mixin font-style($f-size, $f-family, $f-weight: regular, $line-height: $f-size + $f-size/3) {
+  @include font-size($f-size);
+  font-family: $f-family;
+	font-weight: $f-weight;
+	line-height: #{$line-height}px;
+	line-height: #{$line-height/10}rem;
+}
+
+
+/* Vendor prefixes to animations (revised with Autoprefixer)*/
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+	}
+@keyframes #{$animation-name} {
+    @content;
+	}
+}
+
+@mixin animation ($delay, $duration, $animation, $howtimes: 1) {
+  -webkit-animation-delay: $delay;
+  				animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-name: $animation;
+          animation-name: $animation;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+	-webkit-animation-iteration-count:$howtimes;
+					animation-iteration-count: $howtimes;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+					transition: $args;
+}
+
+
+@mixin breakpoint($class) {
+
+	@if $class == xxs {
+    @media (max-width: 530px) { @content; }
+  }
+  @if $class == xs {
+    @media (min-width: 530px) { @content; }
+  }
+
+	/*usado na sidebar*/
+	@else if $class == sm_md {
+    @media (min-width: 770px) and (max-width: 960px) { @content; }
+  }
+
+
+	@else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+
+  @else {
+    @media (min-width: $class) { @content; }
+  }
+}
+
+
+//Transform Browser Prefixes
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+// Rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+	-webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}

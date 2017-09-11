@@ -1,0 +1,101 @@
+/*
+* Override bootstrap styles
+*/
+
+/* -- Navbar -- */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: underline;
+  background-color: inherit;
+}
+
+.nav > li.active > a,
+.nav > li.active > a:hover,
+.nav > li.active > a:focus {
+  color: grey;
+}
+
+.nav > li > a:active,
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: grey;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+.navbar-header{
+  z-index: 2;
+}
+
+.navbar-toggle {
+  padding: 9px 13px;
+  margin-right: 0;
+  border: 0;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-nav {
+  margin: 0;
+  margin-left: 15px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.navbar-collapse.collapsing {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    z-index: -1;
+  }
+}
+
+.navbar-nav > li > a {
+  outline: none;
+  padding-right: 15px;
+}
+
+.navbar-right ul > li > a {
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.navbar-right .navbar-nav {
+  margin: 30px;
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .navbar-right ul > li > a {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-right .navbar-nav {
+    margin: 0;
+  }
+}
+
+/*theme*/
+.navbar-brand, .navbar-nav>li>a {
+  text-shadow: none;
+}

@@ -1,0 +1,44 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -50vw;
+  z-index: 10002;
+  width: 50vw;
+  height: 100vh;
+  background: grey;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  overflow-y: scroll;
+}
+
+.sidebar.over--active {
+  left: 0;
+}
+
+.sidebar__button--dismiss {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.sidebar__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10001;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.sidebar__overlay.over--active {
+  visibility: visible;
+  opacity: 1;
+}

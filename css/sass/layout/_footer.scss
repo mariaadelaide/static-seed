@@ -1,0 +1,17 @@
+/* -- Footer - basic style -- */
+.footerMenu {
+  margin-left: 15px;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    list-style: none;
+
+    a,p {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 15px;
+      line-height: 20px;
+    }
+  }
+}

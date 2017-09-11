@@ -1,0 +1,25 @@
+/*
+* Hamburgers from Jonathan Suh
+*/
+.hamburger {
+  padding: 0;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 22.5px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 3px;
+  border-radius: 0;
+}
+
+
+/*
+* Slick - Slider
+*/
+.slick-slide {
+  outline: 0;
+}
