@@ -432,13 +432,13 @@ td {
 
 /* layout */
 /* -- Footer - basic style -- */
-.footerMenu {
+.footer-nav {
   margin-left: 15px;
   padding: 0; }
-  .footerMenu li {
+  .footer-nav li {
     display: inline-block;
     list-style: none; }
-    .footerMenu li a, .footerMenu li p {
+    .footer-nav li a, .footer-nav li p {
       padding-top: 15px;
       padding-bottom: 15px;
       padding-right: 15px;
