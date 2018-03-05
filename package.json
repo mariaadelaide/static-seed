@@ -10,6 +10,8 @@
     "start": "python -m SimpleHTTPServer"
   },
   "devDependencies": {
+    "bootstrap": "^3.3.7",
     "html5-boilerplate": "^6.0.1"
-  }
+  },
+  "dependencies": {}
 }
