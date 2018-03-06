@@ -63,7 +63,7 @@
     <!-- # CONTENT -->
     <div class="container">
 
-      <!-- // BIG TITLE + INTRO // -->
+      <!-- ## BIG TITLE + INTRO -->
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1 class="marg--bottom-m text--center">Project X</h1>
@@ -72,11 +72,11 @@
         </div>
       </div>
 
-      <!-- // SLIDER // -->
+      <!-- ## SLIDER -->
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="marg--bottom-l">
-            <section class="basic clickToChange slider marg--bottom-s">
+            <section class="basic click-to-change slider marg--bottom-s">
               <div>
                 <img src="http://placehold.it/800x400?text=Slide1">
               </div>
@@ -97,12 +97,12 @@
               </div>
             </section>
 
-            <span class="sliderInfo"></span>
+            <span class="slider-info"></span>
           </div>
         </div>
       </div>
 
-      <!-- // TEXT // -->
+      <!-- ## TEXT -->
       <div class="row">
         <div class="col-md-8 col-md-offset-2 marg--bottom-l">
           <p>
@@ -111,13 +111,13 @@
         </div>
       </div>
 
-      <!-- // SLIDER - half image, half text // -->
+      <!-- ## SLIDER - half image, half text -->
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="marg--bottom-l">
-            <section class="halfs clickToChange slider marg--bottom-s">
+            <section class="halfs click-to-change slider marg--bottom-s">
               <div>
-                <div class="halfSlide">
+                <div class="half-slide">
                   <div>
                     <img src="http://placehold.it/300x300?text=1">
                   </div>
@@ -133,7 +133,7 @@
               </div>
 
               <div>
-                <div class="halfSlide">
+                <div class="half-slide">
                   <div>
                     <img src="http://placehold.it/300x300?text=2">
                   </div>
@@ -148,7 +148,7 @@
               </div>
 
               <div>
-                <div class="halfSlide">
+                <div class="half-slide">
                   <div>
                     <img src="http://placehold.it/300x300?text=3">
                   </div>
@@ -164,7 +164,7 @@
               </div>
 
               <div>
-                <div class="halfSlide">
+                <div class="half-slide">
                   <div>
                     <img src="http://placehold.it/300x300?text=4">
                   </div>
@@ -180,7 +180,7 @@
               </div>
 
               <div>
-                <div class="halfSlide">
+                <div class="half-slide">
                   <div>
                     <img src="http://placehold.it/300x300?text=5">
                   </div>
@@ -197,12 +197,12 @@
 
             </section>
 
-            <span class="sliderInfo2"></span>
+            <span class="slider-info-2"></span>
           </div>
         </div>
       </div>
 
-      <!-- // LIST // -->
+      <!-- ## LIST -->
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <ul class="fields marg--bottom-m">
@@ -229,21 +229,27 @@
     </footer>
 
 
-    <!-- # SCRIPTS -->
+    <!-- # GLOBAL VENDOR SCRIPTS -->
+    <script src="vendor/html5-boilerplate/modernizr-3.5.0.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="vendor/html5-boilerplate/jquery-3.2.1.min.js"><\/script>')</script>-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="vendor/html5-boilerplate/plugins.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="js/vendor/slick-master/slick.js"></script>
+    <!-- # PAGE VENDOR SCRIPTS -->
+    <script src="vendor/slick-carousel/slick.min.js"></script>
 
+    <!-- # GLOBAL SCRIPTS -->
     <script src="js/main.js"></script>
 
+    <!-- # PAGE SCRIPTS -->
     <script>
       $(document).on('ready', function() {
-
-    /* Basic Slider - click to change */
+        /* Basic Slider - click to change */
         var $slider = $(".basic");
-        var $status = $('.sliderInfo');
+        var $status = $('.slider-info');
 
         $slider.slick({
           arrows: false,
@@ -254,9 +260,9 @@
 
         slick_count($slider, $status);
 
-    /* Slider of halfs - click to change */
+        /* Slider of halfs - click to change */
         var $halfs = $(".halfs");
-        var $status2 = $('.sliderInfo2');
+        var $status2 = $('.slider-info-2');
 
         $halfs.slick({
           arrows: false,
@@ -266,20 +272,14 @@
         });
 
         slick_count($halfs, $status2);
-
       });
-
     </script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
     </script>
-
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>

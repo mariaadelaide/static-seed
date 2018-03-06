@@ -1,5 +1,5 @@
 /* -- Slider - click to change slide -- */
-.clickToChange {
+.click-to-change {
   cursor: url(../img/left-arrow.png), auto;
 }
 
@@ -21,7 +21,7 @@
 }
 
 /* -- Slider - Half image, half text -- */
-.halfSlide {
+.half-slide {
 
   @include breakpoint(sm) {
     display: -webkit-box;

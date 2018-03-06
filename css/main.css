@@ -299,7 +299,7 @@ img {
   opacity: 1; }
 
 /* -- Slider - click to change slide -- */
-.clickToChange {
+.click-to-change {
   cursor: url(../img/left-arrow.png), auto; }
 
 /* -- Slider - fullscreen -- */
@@ -318,38 +318,38 @@ img {
 
 /* -- Slider - Half image, half text -- */
 @media (min-width: 768px) {
-  .halfSlide {
+  .half-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
-.halfSlide div {
+.half-slide div {
   width: 100%;
   height: auto;
   display: inline-block;
   float: left;
   background-color: whitesmoke; }
-  .halfSlide div:nth-child(2) {
+  .half-slide div:nth-child(2) {
     /* half text */
     min-height: calc( 100vw - 30px); }
   @media (min-width: 530px) {
-    .halfSlide div:nth-child(2) {
+    .half-slide div:nth-child(2) {
       /* half text */
       max-height: calc( 100vw - 30px);
       min-height: auto; } }
   @media (min-width: 768px) {
-    .halfSlide div {
+    .half-slide div {
       -webkit-box-flex: 1;
       -ms-flex: 1;
       flex: 1;
       width: 50%; }
-      .halfSlide div:nth-child(2) {
+      .half-slide div:nth-child(2) {
         /* half text */
         max-height: auto; } }
-  .halfSlide div > * {
+  .half-slide div > * {
     /* half text */
     padding: 15px; }
-  .halfSlide div > img {
+  .half-slide div > img {
     padding: 0; }
 
 /* -- Table - basic style -- */
