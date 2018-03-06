@@ -101,6 +101,22 @@
 .slick-slide {
   outline: 0; }
 
+.slick-prev,
+.slick-next {
+  z-index: 1; }
+
+.slick-prev {
+  left: 25px; }
+
+[dir="rtl"] .slick-prev {
+  right: 25px; }
+
+.slick-next {
+  right: 25px; }
+
+[dir="rtl"] .slick-next {
+  left: 25px; }
+
 /*
 * Base/global css style
 */
