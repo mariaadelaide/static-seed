@@ -9,12 +9,14 @@
   "scripts": {
     "build": "node_modules/node-sass/bin/node-sass css/main.scss css/main.css",
     "build:watch": "node_modules/node-sass/bin/node-sass -w css/main.scss css/main.css",
-    "start": "python -m SimpleHTTPServer"
+    "dev": "./node_modules/light-server/bin/light-server -s . -p 8000 -w \"**\" -o",
+    "start": "npm run build && python -m SimpleHTTPServer"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "hamburgers": "^0.9.3",
     "html5-boilerplate": "^6.0.1",
+    "light-server": "^2.4.0",
     "node-sass": "^4.7.2",
     "slick-carousel": "^1.8.1"
   },
