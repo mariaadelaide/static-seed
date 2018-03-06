@@ -4,9 +4,11 @@ Maria Adelaide starts a new static website project.
 
 ## How to run
 
+Launch a terminal and run a `python -m SimpleHTTPServer` or...
+
 Make sure [Node.js](https://nodejs.org/en/)/npm is installed `npm -v` or install it with [Homebrew](https://brew.sh), `brew install node`.
 
-Launch a terminal, run `npm run start`.
+Launch a terminal and run `npm run start`.
 
 ## Built-in development server (Sass watcher, livereload)
 
@@ -15,7 +17,7 @@ For convenience while developing, there's a optional bundled dev server[1] confi
 To use it:
 
 - Install the dev dependencies `npm install` (only needed the first time) 
-- Run `npm run dev.`
+- Run `npm run dev`
 
 [1] - Using [light-server](https://github.com/txchen/light-server).
 
