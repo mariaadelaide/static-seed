@@ -8,8 +8,7 @@
   },
   "scripts": {
     "build": "node_modules/node-sass/bin/node-sass css/main.scss css/main.css",
-    "build:watch": "node_modules/node-sass/bin/node-sass -w css/main.scss css/main.css",
-    "dev": "./node_modules/light-server/bin/light-server -s . -p 8000 -w \"**\" -o",
+    "dev": "./node_modules/light-server/bin/light-server -s . -p 8000 -w '**/*.js, **/*.html' -w '**/*.scss # npm run build # reloadcss' -o",
     "start": "npm run build && python -m SimpleHTTPServer"
   },
   "devDependencies": {
