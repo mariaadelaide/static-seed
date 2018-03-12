@@ -1,48 +1,44 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Seed</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MA Static Seed</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/slick-master/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/slick-master/slick-theme.css">
-    <link rel="stylesheet" href="css/vendor/hamburgers/hamburgers.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
 
+    <!-- # GLOBAL VENDOR STYLES -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/hamburgers/hamburgers.min.css">
+
+    <!-- # PAGE VENDOR STYLES -->
+    <link rel="stylesheet" href="vendor/slick-carousel/slick.css">
+    <link rel="stylesheet" href="vendor/slick-carousel/slick-theme.css">
+
+    <!-- # GLOBAL STYLES -->
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- # PAGE/HEAD STYLES -->
+    <!-- <style>
+      /* ... */
+    </style> -->
   </head>
-
   <body>
-    <!--[if lt IE 8]>
-        <p class="bserupgrade">You are using an <strong>outdated</strong> bser. Please <a href="http://bsehappy.com/">upgrade your bser</a> to improve your experience.</p>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <!-- ///// HEADER ///// -->
+    <!-- # HEADER/NAVBAR -->
     <header>
       <div class="container no-pad">
-      <!-- <div class="container-fluid"> -->
         <nav class="navbar" role="navigation">
 
           <div class="navbar-header">
-            <!-- menu hamburger from Bootstrap
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button> -->
-
-            <!-- menu hamburger from https://jonsuh.com/hamburgers/ with Bootstrap collapse -->
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false">
+            <!-- ## Hamburger menu with Bootstrap collapse -->
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
               <div class="hamburger hamburger--slider">
                 <div class="hamburger-box">
                   <div class="hamburger-inner"></div>
@@ -53,24 +49,23 @@
             <a class="navbar-brand" href="index.html">Name</a>
           </div>
 
-          <div class="collapse navbar-collapse navbar-right" id="mainMenu">
+          <div class="collapse navbar-collapse navbar-right" id="main-nav">
             <ul class="nav navbar-nav">
               <li><a href="works.html">Works</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="page_x.html">Page X</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div>
         </nav>
       </div>
     </header>
 
-    <!-- ///// CONTENT ///// -->
+    <!-- # CONTENT -->
     <div class="container">
-    <!-- <div class="container-fluid"> -->
 
-      <!-- // VIDEO // -->
+      <!-- ## VIDEO -->
       <div class="row">
-        <!-- / VIDEO - vimeo / -->
+        <!-- ### VIDEO - vimeo -->
         <div class="videoContainer col-xs-12 marg--bottom-l">
           <video controls width="100%" height="auto" loop muted poster="video/sample.png">
             <source src="video/sample.mp4" type="video/mp4">
@@ -80,12 +75,12 @@
           </video>
         </div>
 
-        <!-- / VIDEO - vimeo /
+        <!-- ### VIDEO - vimeo /
         <div class="videoContainer col-xs-12 marg--bottom-l">
           <iframe src="https://player.vimeo.com/video/175629655" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div> -->
 
-        <!-- / VIDEO - youtube /
+        <!-- ### VIDEO - youtube /
         <div class="videoContainer col-xs-12 marg--bottom-l">
           <iframe src="https://www.youtube.com/embed/jd8_aAn8cdE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div> -->
@@ -93,7 +88,7 @@
       </div>
 
 
-      <!-- // SLIDER // -->
+      <!-- ## SLIDER -->
       <div class="row">
         <div class="col-xs-12 marg--bottom-l">
           <section class="basic slider">
@@ -119,7 +114,7 @@
         </div>
       </div>
 
-      <!-- // TITLE + TEXT // -->
+      <!-- ## TITLE + TEXT -->
       <div class="row">
         <div class="col-xs-12 marg--bottom-l">
           <h1 class="marg--bottom-l">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h1>
@@ -129,10 +124,10 @@
         </div>
       </div>
 
-      <!-- // THUMBNAILS // -->
+      <!-- ## THUMBNAILS -->
       <div class="row">
         <div class="col-xs-12 no-pad marg--bottom-l">
-          <!-- / THUMBNAIL / -->
+          <!-- ### THUMBNAIL -->
           <div class="col-md-4 col-sm-6 thumb">
             <a href="work.html">
               <div class="thumb__container">
@@ -208,7 +203,7 @@
         </div>
       </div>
 
-      <!-- // LIST // -->
+      <!-- ## LIST -->
       <div class="row">
         <div class="col-xs-12 marg--bottom-l">
           <h4 class="marg--bottom-m">Title of List</h4>
@@ -221,13 +216,12 @@
         </div>
       </div>
 
-      </div>
+    </div>
 
-    <!-- ///// FOOTER ///// -->
+    <!-- # FOOTER -->
     <footer>
       <div class="container no-pad">
-      <!-- <div class="container-fluid"> -->
-        <ul class="footerMenu">
+        <ul class="footer-nav">
           <li><p><b>Submenu</b></p></li>
           <li><a href="work.html">Work 1</a></li>
           <li><a href="work2.html">Work 2</a></li>
@@ -237,15 +231,22 @@
     </footer>
 
 
-    <!-- SCRIPTS -->
+    <!-- # GLOBAL VENDOR SCRIPTS -->
+    <script src="vendor/html5-boilerplate/modernizr-3.5.0.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="vendor/html5-boilerplate/jquery-3.2.1.min.js"><\/script>')</script>-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="vendor/html5-boilerplate/plugins.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="js/vendor/slick-master/slick.js"></script>
+    <!-- # PAGE VENDOR SCRIPTS -->
+    <script src="vendor/slick-carousel/slick.min.js"></script>
 
+    <!-- # GLOBAL SCRIPTS -->
     <script src="js/main.js"></script>
 
+    <!-- # PAGE SCRIPTS -->
     <script>
       $(document).on('ready', function() {
         $(".basic").slick({
@@ -255,15 +256,11 @@
       });
     </script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
     </script>
-
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>
