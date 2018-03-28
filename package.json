@@ -15,8 +15,8 @@
     "bootstrap": "^3.3.7",
     "hamburgers": "^0.9.3",
     "html5-boilerplate": "^6.0.1",
-    "light-server": "^2.4.0",
-    "node-sass": "^4.7.2",
+    "light-server": "^2.5.0",
+    "node-sass": "^4.8.3",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
