@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "hamburgers": "^0.9.3",
-    "html5-boilerplate": "^6.0.1",
-    "light-server": "^2.5.0",
-    "node-sass": "^4.8.3",
+    "hamburgers": "^1.1.3",
+    "html5-boilerplate": "^6.1.0",
+    "light-server": "^2.5.1",
+    "node-sass": "^4.9.4",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
