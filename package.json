@@ -10,5 +10,24 @@
   "author": "Maria Adelaide <info@mariaadelaide.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.14",
+    "dotenv": "^10.0.0",
+    "grunt": "^1.4.1",
+    "grunt-banner": "^0.6.0",
+    "grunt-cache-bust": "^1.7.0",
+    "grunt-compile-handlebars": "^2.0.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-ftps-deploy": "^0.1.16",
+    "grunt-ga-replace": "^1.0.2",
+    "grunt-sass": "^3.1.0",
+    "grunt-sftp-deploy": "^0.2.5",
+    "grunt-terser": "^2.0.0",
+    "handlebars": "^4.7.7",
+    "html5-boilerplate": "^8.0.0",
+    "sass": "^1.46.0"
   }
 }
