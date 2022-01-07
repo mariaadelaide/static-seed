@@ -1,0 +1,14 @@
+{
+  "name": "MA-static-sed",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Starter/seed repository for static prototypes of projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaadelaide/ma-static-sed.git"
+  },
+  "author": "Maria Adelaide <info@mariaadelaide.com>",
+  "license": "MIT",
+  "devDependencies": {
+  }
+}
