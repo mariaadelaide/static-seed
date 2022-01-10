@@ -38,7 +38,7 @@ module.exports = grunt => {
       dist: {
         expand: true,
         cwd: '.',
-        src: ['**', '!**/.tmp/**', '!**/*.handlebars', '!**/node_modules/**', '!**/grunt/**', '!**/partials/**', '!**/Gruntfile.js', '!**/package.json', '!**/package-lock.json', '!**/README.md'],
+        src: ['**', '!**/.tmp/**', '!**/dist/**', '!**/*.handlebars', '!**/node_modules/**', '!**/grunt/**', '!**/partials/**', '!**/Gruntfile.js', '!**/package.json', '!**/package-lock.json', '!**/README.md'],
         dest: 'dist/'
       },
       dev_vendor: {
