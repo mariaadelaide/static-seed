@@ -9,6 +9,7 @@ module.exports = grunt => {
       vendor: [
         'html5-boilerplate/dist/css/normalize.css',
         'html5-boilerplate/dist/js/vendor/modernizr-3.11.2.min.js',
+        'sanitize.css/sanitize.css',
         // 'new-library/dist/**'
       ]
     },

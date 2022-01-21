@@ -28,6 +28,7 @@
     "grunt-terser": "^2.0.0",
     "handlebars": "^4.7.7",
     "html5-boilerplate": "^8.0.0",
+    "sanitize.css": "^13.0.0",
     "sass": "^1.46.0"
   }
 }
