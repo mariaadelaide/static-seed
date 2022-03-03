@@ -1,14 +1,12 @@
 {
-  "name": "MA-static-sed",
-  "version": "0.0.0",
+  "name": "@mariaadelaide/static-seed",
   "private": true,
-  "description": "Starter/seed repository for static prototypes of projects.",
+  "description": "MA static starter/seed.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariaadelaide/ma-static-sed.git"
+    "url": "git+ssh://git@bitbucket.org/mariaadelaide/static-seed.git"
   },
   "author": "Maria Adelaide <info@mariaadelaide.com>",
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "cssnano": "^5.0.14",
