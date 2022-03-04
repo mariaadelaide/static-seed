@@ -14,10 +14,13 @@
     "html5-boilerplate": "^8.0.0",
     "live-server": "^1.2.1",
     "parcel": "^2.3.2",
+    "rimraf": "^3.0.2",
     "sanitize.css": "^13.0.0"
   },
   "scripts": {
-    "start": "npx parcel index.pug",
-    "live-server": "npx live-server"
+    "build": "npm run clean && npx parcel build index.pug",
+    "clean": "rimraf dist",
+    "live-server": "npx live-server",
+    "start": "npx parcel index.pug --open"
   }
 }
