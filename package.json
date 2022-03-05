@@ -23,5 +23,6 @@
     "clean": "rimraf dist",
     "live-server": "npx live-server",
     "start": "npx parcel index.pug --dist-dir dist.dev --open"
-  }
+  },
+  "browserslist": "> 0.5%, not dead, not IE 11"
 }
