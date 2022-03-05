@@ -21,6 +21,6 @@
     "build": "npm run clean && npx parcel build index.pug",
     "clean": "rimraf dist",
     "live-server": "npx live-server",
-    "start": "npx parcel index.pug --open"
+    "start": "npx parcel index.pug --dist-dir dist.dev --open"
   }
 }
