@@ -10,6 +10,7 @@
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.3.2",
     "@parcel/transformer-pug": "^2.3.2",
+    "@parcel/transformer-sass": "^2.3.2",
     "@parcel/transformer-webmanifest": "^2.3.2",
     "html5-boilerplate": "^8.0.0",
     "live-server": "^1.2.1",
