@@ -19,9 +19,10 @@
     "sanitize.css": "^13.0.0"
   },
   "scripts": {
-    "build": "npm run clean && npx parcel build index.pug",
-    "clean": "rimraf dist",
-    "live-server": "npx live-server",
+    "build": "npm run build:clean && npx parcel build index.pug",
+    "build:clean": "rimraf dist",
+    "clean": "npm run build:clean && rimraf dist.dev && rimraf .parcel-cache",
+    "server": "npx live-server",
     "start": "npx parcel index.pug --dist-dir dist.dev --open"
   },
   "browserslist": "> 0.5%, not dead, not IE 11"
