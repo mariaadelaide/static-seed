@@ -182,3 +182,4 @@ dist
 !/dist
 !/dist/**/*.css.map
 /dist.dev
+!/.env

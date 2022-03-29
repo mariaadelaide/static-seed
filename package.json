@@ -12,6 +12,7 @@
     "@parcel/transformer-pug": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
     "@parcel/transformer-webmanifest": "^2.3.2",
+    "ftp-deploy": "^2.4.1",
     "html5-boilerplate": "^8.0.0",
     "live-server": "^1.2.1",
     "parcel": "^2.3.2",
@@ -22,8 +23,12 @@
     "build": "npm run build:clean && npx parcel build index.pug",
     "build:clean": "rimraf dist",
     "clean": "npm run build:clean && rimraf dist.dev && rimraf .parcel-cache",
+    "deploy": "node deploy",
     "server": "npx live-server",
     "start": "npx parcel index.pug --dist-dir dist.dev --open"
   },
-  "browserslist": "> 0.5%, not dead, not IE 11"
+  "browserslist": "> 0.5%, not dead, not IE 11",
+  "dependencies": {
+    "dotenv-flow": "^3.2.0"
+  }
 }
