@@ -28,15 +28,15 @@ MA Static Seed can be used in two ways:
 
 ## Setup
 
-1. Install dependencies:
+1.  Install dependencies:
 
-   ```shell
-   $ npm install
-   ```
+    ```shell
+    $ npm install
+    ```
 
-2. Remove this `README.md` file, fill in `README.md.template` accordingly and rename to remove the template suffix.
+2.  Remove this `README.md` file, fill in `README.md.template` accordingly and rename to remove the template suffix.
 
-3. Setup all the required `.env` variables for deployment config. Keep in mind that **one shouldn't ever commit 'secrets' /passwords on `.env` file**, but place them instead on a just local override `.env.local` (being ignored)
+3.  Setup all the required `.env` variables for deployment config. Keep in mind that **one shouldn't ever commit 'secrets' /passwords on `.env` file**, but place them instead on a just local override `.env.local` (being ignored)
 
 ## Usage
 
