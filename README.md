@@ -95,4 +95,4 @@ $ NODE_ENV=production npm run deploy
 
 For questions about about this project or issues, you can reach out to:
 
-- Pedro Santa \<[pedro@mariaadelaide.com](mailto:pedro@mariaadelaide.com)\>
+- Pedro Santa ([pedro@mariaadelaide.com](mailto:pedro@mariaadelaide.com))
