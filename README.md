@@ -6,16 +6,16 @@ Maria Adelaide starts a new static website project.
 
 MA Static Seed can be used in two ways:
 
-- In a **completely static mode**, where no step of building/processing/compiling occurs and thus all the tasks that relate to bundling, dependencies resolution, shared HTML partials, deployment, SASS compilation, CSS prefixing, etc, must be done/managed manually. For this step, one can skip the Requirements, Setup and Usage sections below and start the development by editing the files (`index.html`) on the code editor of choice (though setup of [EditorConfig](https://editorconfig.org) is highly recommended nonetheless) and upload them to an web server/hosting for deployment using any preferred method. For convenience a **local web server** with **live reload** is offered on this mode nonetheless, which in this case Requirements and Setup steps must be observed.
-- In a **tooling mode**, where we achieve a more modern/up-to-date workflow through the use of [Parcel](https://parceljs.org) and other scripts, capable of supporting the specific requirements and challenges of modern web development and its associated ecosystem. Thus, using this mode one will have support for:
-  - **[SASS](https://sass-lang.com)** compilation.
-  - **Client side templating** through [Pug](https://pugjs.org) (support for better static files generation through partials, layouts and template blocks).
-  - Automatic **transpilation of JS code** through [Babel](https://babeljs.io) (configured to support a specific set of browsers) that allow for safer usage of newer features while keeping significant compatibility, by inserting all the necessary polyfills for these, for instance.
-  - **Dependencies/ES6 modules resolution** (for instance, by automatically looking up `node_modules` folder when importing modules, without one having to type the full path).
-  - Flexible **environment/config variables** system with dotenv/[dotenv-flow](https://github.com/kerimdzhanov/dotenv-flow).
-  - **Cache busting** and optimization with content hash appended to asset filenames.
-  - Built-in **local/dev (static) web server** with file changes **watcher** and **livereload**.
-  - Built-in **FTP/FTPS/SFTP deployment** through [ftp-deploy](https://www.npmjs.com/package/ftp-deploy).
+- In a **completely static mode**, where no step of building/processing/compiling occurs and thus all the tasks that relate to bundling, dependencies resolution, shared HTML partials, deployment, SASS compilation, CSS prefixing, etc, must be done/managed manually. For this step, one can skip the Requirements, Setup and Usage sections below and start the development by editing the files (`index.html`) on the code editor of choice (though setup of [EditorConfig](https://editorconfig.org) is highly recommended nonetheless) and upload them to an web server/hosting for deployment using any preferred method. For convenience a **local web server** with **live reload** is offered on this mode, which, in this case, Requirements and Setup steps must be observed.
+- In a **tooling mode**, where it offers a more modern/up-to-date workflow through the use of [Parcel](https://parceljs.org) and other scripts, capable of supporting specific requirements/challenges of modern web development workflow. Using this mode one will have support for:
+    - **[SASS](https://sass-lang.com)** compilation.
+    - **Client side templating** through [Pug](https://pugjs.org) (support for better static files generation through partials, layouts and template blocks).
+    - Automatic **transpilation of JS code** through [Babel](https://babeljs.io) (configured to support a specific set of browsers) that allow for safer usage of newer features while keeping significant compatibility, by inserting all the necessary polyfills for these, for instance.
+    - **Dependencies/ES6 modules resolution** (for instance, by automatically looking up `node_modules` folder when importing modules, without one having to type the full path).
+    - Flexible **environment/config variables** system with dotenv/[dotenv-flow](https://github.com/kerimdzhanov/dotenv-flow).
+    - **Cache busting** and optimization with content hash appended to asset filenames.
+    - Built-in **local/dev (static) web server** with file changes **watcher** and **livereload**.
+    - Built-in **FTP/FTPS/SFTP deployment** through [ftp-deploy](https://www.npmjs.com/package/ftp-deploy).
 
 ## Requirements
 
@@ -34,9 +34,9 @@ MA Static Seed can be used in two ways:
     $ npm install
     ```
 
-2.  Remove this `README.md` file, fill in `README.md.template` accordingly and rename to remove the template suffix.
+2.  Remove this `README.md` file, fill in `README.md.template` accordingly and rename to remove the `.template` suffix.
 
-3.  Setup all the required `.env` variables for deployment config. Keep in mind that **one shouldn't ever commit 'secrets' /passwords on `.env` file**, but place them instead on a just local override `.env.local` (being ignored)
+3.  Setup all the required `.env` variables for deployment config. Keep in mind that **one shouldn't ever commit 'secrets' /passwords on `.env` file**, but place them instead on a local override `.env.local` file (being ignored).
 
 ## Usage
 
