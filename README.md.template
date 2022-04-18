@@ -1,0 +1,37 @@
+# Project Name
+
+(Add a few lines here about the project as a brief description.)
+
+## Project Setup
+
+(Section is dedicated to inform how to properly set up this project for development.)
+
+### Requirements
+
+(State here all the software requirements needed to setup the project, install tools, libraries, programming languages runtimes/node/etc, servers, etc.)
+
+### Steps
+
+(List here all the steps required following the setup of the requirements, to be ready to develop on this project.)
+
+## Usage
+
+### Development
+
+(List here all the relevant commands/scripts needed to run and develop the project.)
+
+### Tests
+
+(Add how tests should be maintained and how you can run them here, if it makes sense.)
+
+### Commands
+
+(You can place an exaustive list here of all the available commands/scripts for this project.)
+
+## Deployment 
+
+(List here the setup, commands and how someone can perform deployments, to the relevant environments.)
+
+## Maintainers/Who to talk
+
+(Detail here the names and contacts/emails of the most relevant persons to contact regarding this project.)

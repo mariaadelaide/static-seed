@@ -1,23 +1,32 @@
 {
   "name": "@mariaadelaide/static-seed",
-  "version": "0.0.0",
   "private": true,
+  "description": "MA static starter/seed.",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/mariaadelaide/static-seed.git"
   },
-  "scripts": {
-    "build": "node_modules/node-sass/bin/node-sass css/main.scss css/main.css",
-    "dev": "./node_modules/light-server/bin/light-server -s . -p 8000 -w '**/*.js, **/*.html' -w '**/*.scss # npm run build # reloadcss' -o",
-    "start": "npm run build && python -m SimpleHTTPServer"
-  },
+  "author": "Maria Adelaide <info@mariaadelaide.com>",
   "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "hamburgers": "^1.1.3",
-    "html5-boilerplate": "^6.1.0",
-    "light-server": "^2.5.1",
-    "node-sass": "^4.9.4",
-    "slick-carousel": "^1.8.1"
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/transformer-pug": "^2.3.2",
+    "@parcel/transformer-sass": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
+    "dotenv-flow": "^3.2.0",
+    "ftp-deploy": "^2.4.1",
+    "html5-boilerplate": "^8.0.0",
+    "live-server": "^1.2.1",
+    "parcel": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "sanitize.css": "^13.0.0"
   },
-  "dependencies": {}
+  "scripts": {
+    "build": "npm run build:clean && npx parcel build index.pug",
+    "build:clean": "rimraf dist",
+    "clean": "npm run build:clean && rimraf dist.dev && rimraf .parcel-cache",
+    "deploy": "node deploy",
+    "server": "npx live-server",
+    "start": "npx parcel index.pug --dist-dir dist.dev --open"
+  },
+  "browserslist": "> 0.5%, not dead, not IE 11"
 }
