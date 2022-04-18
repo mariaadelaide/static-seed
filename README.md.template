@@ -10,15 +10,36 @@
 
 (State here all the software requirements needed to setup the project, install tools, libraries, programming languages runtimes/node/etc, servers, etc.)
 
+-   Make sure you have **Node.js** installed, [or otherwise install it](https://nodejs.org/en/download/):
+    
+    ```shell
+    $ node -v
+    $ npm -v
+    ```
+
 ### Steps
 
 (List here all the steps required following the setup of the requirements, to be ready to develop on this project.)
+
+1.  Install dependencies:
+
+    ```shell
+    $ npm install
+    ```
+
+(Complete this accordingly.)
 
 ## Usage
 
 ### Development
 
 (List here all the relevant commands/scripts needed to run and develop the project.)
+
+Run:
+
+```shell
+$ npm start
+```
 
 ### Tests
 
@@ -28,10 +49,45 @@
 
 (You can place an exaustive list here of all the available commands/scripts for this project.)
 
+The complete list of commands available is:
+
+- **`npm run build`** — Cleans previous distribution build and rebuilds the whole project for deployment (staging/preview, etc) on the `/dist` folder.
+- **`npm run build:clean`** — Cleans the distribution build (`/dist` folder).
+- **`npm run clean`** — Cleans all generated files (distribution build, dev/local build, Parcel cache).
+- **`npm run deploy`** — Deploys the project based off `NODE_ENV` environment and the `.env`/[dotenv](https://github.com/motdotla/dotenv) config.
+- **`npm run server`** — Runs just a local dev web server with live reload, but without any build process at all.
+- **`npm start`** — Main development command, runs Parcel build with a dev server and re-builds on/watches file changes.
+
 ## Deployment 
 
 (List here the setup, commands and how someone can perform deployments, to the relevant environments.)
 
+### Setup
+
+Set all `FTP_DEPLOY_...` variables on `.env` accordingly and add a `.env.local` file with the following content:
+
+```
+FTP_DEPLOY_PASSWORD="<password>"
+```
+
+### Deploy
+
+Run to deploy to/using the default `NODE_ENV`:
+
+```shell
+$ npm run deploy
+```
+
+For a specific `NODE_ENV` do:
+
+```shell
+$ NODE_ENV=production npm run deploy
+```
+
 ## Maintainers/Who to talk
 
 (Detail here the names and contacts/emails of the most relevant persons to contact regarding this project.)
+
+For questions about about this project or issues, you can reach out to:
+
+- Name ([email@mariaadelaide.com](mailto:email@mariaadelaide.com))
