@@ -21,12 +21,12 @@
     "sanitize.css": "^13.0.0"
   },
   "scripts": {
-    "build": "npm run build:clean && npx parcel build index.pug",
+    "build": "npm run build:clean && npx parcel build index.pug './!(partials)/**/*.pug'",
     "build:clean": "rimraf dist",
     "clean": "npm run build:clean && rimraf dist.dev && rimraf .parcel-cache",
     "deploy": "node deploy",
     "server": "npx live-server",
-    "start": "npx parcel index.pug --dist-dir dist.dev --open"
+    "start": "npx parcel index.pug './!(partials)/**/*.pug' --dist-dir dist.dev --open"
   },
   "browserslist": "> 0.5%, not dead, not IE 11"
 }
