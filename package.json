@@ -28,5 +28,5 @@
     "server": "npx live-server",
     "start": "npx parcel index.pug './!(partials)/**/*.pug' --dist-dir dist.dev --open"
   },
-  "browserslist": "> 0.5%, not dead, not IE 11"
+  "browserslist": ">0.3%, not dead"
 }
